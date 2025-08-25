@@ -294,3 +294,17 @@ If you get "port already in use" errors:
 - Hot-reload is enabled for both development servers
 - The frontend must be built before running in production mode
 - All commands should be run from the project root directory
+
+## Testing Commands
+
+### `npm test`
+Runs backend unit and integration tests.
+
+**What it does:**
+- Executes Jest tests in the `api` workspace
+- Verifies authentication endpoints, guide generation, middleware, and CORS behavior
+
+**Usage:**
+```bash
+npm test
+```
