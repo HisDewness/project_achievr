@@ -5,8 +5,7 @@
   "description": "A web app for helping gamers get achievements/trophies for their games",
   "workspaces": [
     "api",
-    "frontend",
-    "shared"
+    "frontend"
   ],
   "scripts": {
     "dev": "concurrently \"npm run dev:api\" \"npm run dev:frontend\"",
