@@ -44,8 +44,8 @@ npm run install:all
 ### `npm run dev`
 **Main development command** - Starts both frontend and backend servers simultaneously in development mode.
 
-**What it does:**
-- Starts the Express.js API server (typically on port 3001)
+-**What it does:**
+- Starts the Express.js API server (typically on port 4000)
 - Starts the Next.js frontend server (typically on port 3000)
 - Both servers run with hot-reload enabled
 
@@ -251,11 +251,11 @@ If the keyboard shortcut doesn't work or you need to stop a service from a diffe
 ```bash
 # Find processes using specific ports
 lsof -ti:3000  # Find process using port 3000 (frontend)
-lsof -ti:3001  # Find process using port 3001 (backend)
+lsof -ti:4000  # Find process using port 4000 (backend)
 
 # Kill the process
 kill -9 $(lsof -ti:3000)  # Kill process on port 3000
-kill -9 $(lsof -ti:3001)  # Kill process on port 3001
+kill -9 $(lsof -ti:4000)  # Kill process on port 4000
 ```
 
 **Method 3: Kill All Node Processes (Use with caution)**
@@ -269,7 +269,7 @@ killall node
 ### Common Ports Used by This Project
 
 - **Port 3000**: Next.js frontend development server
-- **Port 3001**: Express.js backend API server
+- **Port 4000**: Express.js backend API server
 
 ### Troubleshooting Port Conflicts
 
@@ -278,7 +278,7 @@ If you get "port already in use" errors:
 1. **Check what's using the port:**
    ```bash
    lsof -i:3000  # Check port 3000
-   lsof -i:3001  # Check port 3001
+   lsof -i:4000  # Check port 4000
    ```
 
 2. **Kill the conflicting process:**
