@@ -11,7 +11,7 @@ Configure allowed origins with the `ALLOWED_ORIGINS` environment variable:
 ALLOWED_ORIGINS=http://localhost:3000
 ```
 
-Invalid payloads trigger a `400` response with details, while requests from unauthorized origins receive a `403` error.
+Invalid payloads or malformed JSON trigger `400` responses, while requests from unauthorized origins receive a `403` error.
 
 ### Testing
 

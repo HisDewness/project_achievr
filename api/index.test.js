@@ -22,4 +22,14 @@ describe('API security and validation', () => {
       .set('Origin', 'http://unauthorized.com');
     expect(res.status).toBe(403);
   });
+
+  test('rejects malformed JSON payloads', async () => {
+    const res = await request(app)
+      .post('/generate-guide')
+      .set('Origin', 'http://allowed.com')
+      .set('Content-Type', 'application/json')
+      .send('{"game":');
+    expect(res.status).toBe(400);
+    expect(res.body.error).toBe('Invalid JSON');
+  });
 });
