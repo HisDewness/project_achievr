@@ -18,7 +18,8 @@
     "start:frontend": "npm run start --workspace=frontend",
     "install:all": "npm install && npm install --workspace=api && npm install --workspace=frontend",
     "clean": "rm -rf node_modules && rm -rf api/node_modules && rm -rf frontend/node_modules && rm -rf shared/node_modules",
-    "lint": "npm run lint --workspace=frontend"
+    "lint": "npm run lint --workspace=frontend",
+    "test": "npm test --workspace=api"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
