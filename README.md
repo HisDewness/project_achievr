@@ -64,7 +64,8 @@ Create a root `.env` file based on `.env.example` with the following variables. 
   ```bash
   npm run lint
   ```
-- Run the test suite (to be implemented):
+- Run backend unit and integration tests with:
+(Tests cover authentication endpoints, guide generation, middleware, and CORS behavior)
   ```bash
   npm test
   ```
@@ -82,4 +83,3 @@ Create a root `.env` file based on `.env.example` with the following variables. 
 - Limit logs to non-sensitive information; prefer centralized logging with access controls.
 - Use HTTPS in production and enable CORS only for trusted origins.
 - Follow least-privilege principles when integrating with external services and store only necessary user data.
-
