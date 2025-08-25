@@ -5,8 +5,7 @@
   "description": "A web app for helping gamers get achievements/trophies for their games",
   "workspaces": [
     "api",
-    "frontend",
-    "shared"
+    "frontend"
   ],
   "scripts": {
     "dev": "concurrently \"npm run dev:api\" \"npm run dev:frontend\"",
@@ -17,7 +16,7 @@
     "start:api": "npm run start --workspace=api",
     "start:frontend": "npm run start --workspace=frontend",
     "install:all": "npm install && npm install --workspace=api && npm install --workspace=frontend",
-    "clean": "rm -rf node_modules && rm -rf api/node_modules && rm -rf frontend/node_modules && rm -rf shared/node_modules",
+    "clean": "rm -rf node_modules && rm -rf api/node_modules && rm -rf frontend/node_modules",
     "lint": "npm run lint --workspace=frontend"
   },
   "devDependencies": {

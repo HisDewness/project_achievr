@@ -8,18 +8,16 @@ This is a monorepo with the following structure:
 - **Root**: Main project configuration and workspace management
 - **api/**: Express.js backend server
 - **frontend/**: Next.js frontend application
-- **shared/**: Shared utilities and components
 
 ## Installation Commands
 
 ### `npm install`
-Installs all dependencies for the root project and all workspaces (api, frontend, shared).
+Installs all dependencies for the root project and all workspaces (api, frontend).
 
 **What it does:**
 - Installs root dependencies (concurrently)
 - Installs dependencies for the api workspace
 - Installs dependencies for the frontend workspace
-- Installs dependencies for the shared workspace (if any)
 
 **Usage:**
 ```bash
@@ -143,7 +141,6 @@ Removes all node_modules directories from the project.
 - Deletes node_modules from the root directory
 - Deletes node_modules from the api directory
 - Deletes node_modules from the frontend directory
-- Deletes node_modules from the shared directory
 
 **Usage:**
 ```bash
